@@ -23,6 +23,7 @@ class CustomHeaderMiddleware(MiddlewareMixin):
             request.META['HTTP_TOKEN_UPDATED'] = False
             print('Can not get there buddy hahaha')
 
+
         raw_token = request.COOKIES.get(settings.SIMPLE_JWT['AUTH_COOKIE']) or None
 
         if raw_token is not None:
