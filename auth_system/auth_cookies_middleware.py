@@ -24,7 +24,6 @@ class CustomHeaderMiddleware(MiddlewareMixin):
             print('Can not get there buddy hahaha')
 
 
-
         raw_token = request.COOKIES.get(settings.SIMPLE_JWT['AUTH_COOKIE']) or None
 
         if raw_token is not None:
