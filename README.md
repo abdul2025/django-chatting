@@ -1,1 +1,1 @@
-# django-chatting
+# moc-copy
